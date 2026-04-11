@@ -39,6 +39,7 @@ html {
 
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 0.1em;
 }
 
 form {
