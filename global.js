@@ -19,7 +19,7 @@ let pages = [
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "/https://rluutuyen-arch.github.io/portfolio/";         
+  : "https://rluutuyen-arch.github.io/portfolio/";         
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
@@ -27,9 +27,6 @@ document.body.prepend(nav);
 for(let p of pages) {
     let url = p.url;
     let title = p.title
-    if (!url.startsWith('http')) {
-        url = BASE_PATH + url;
-    }
-    //url = !url.startsWith('http') ? BASE_PATH + url : url;
+    url = !url.startsWith('http') ? BASE_PATH + url : url;
     nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 }
