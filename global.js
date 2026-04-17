@@ -11,15 +11,15 @@ function $$(selector, context = document) {
 // currentLink?.classlist.add("current")
 let pages = [
     {url: '', title: 'Home'}, 
-    {url: 'projects/', title: 'Projects'},
+    {url: 'projects/', title: 'Projects'}, 
     {url: 'contact/', title: 'Contact'}, 
     {url: 'https://github.com/rluutuyen-arch/', title: 'Github'}, 
     {url: 'resume.html', title: 'Resume'}
 ]
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  
-  : "/website/";         
+const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1") 
+    ? "/" 
+    : "/website/";
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
