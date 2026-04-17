@@ -25,7 +25,7 @@ let nav = document.createElement('nav');
 document.body.prepend(nav);
 
 for(let p of pages) {
-    print(p)
+    console.log(p)
     let url = p.url;
     let title = p.title
     url = !url.startsWith('http') ? BASE_PATH + url : url;
