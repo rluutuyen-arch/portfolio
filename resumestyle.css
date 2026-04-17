@@ -1,6 +1,8 @@
+html{
+  color-scheme: light dark;
+}
 body {
     font-family: Georgia, serif;
-    margin: 40px;
 }
 
 .container {
