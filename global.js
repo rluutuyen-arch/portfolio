@@ -33,7 +33,7 @@ for(let p of pages) {
     a.textContent = title;
     nav.append(a);
     a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname,)
-    a.target.toggle('_blank', a.host !== location.host)
+    a.toggleAttribute('target', a.host !== location.host);
     console.log(a.classList)
 }
 
