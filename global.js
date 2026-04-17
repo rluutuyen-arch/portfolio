@@ -16,7 +16,7 @@ let pages = [
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "/website/";         
+  : "/portfolio/";         
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
@@ -24,6 +24,8 @@ document.body.prepend(nav);
 for(let p of pages) {
     let url = p.url;
     let title = p.title
-    url = !url.startsWith('http') ? BASE_PATH + url : url;
+    if (!url.startsWith('http')) {
+        url = BASE_PATH + url;
+    }
     nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 }
