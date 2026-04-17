@@ -34,7 +34,7 @@ for(let p of pages) {
     nav.append(a);
     a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname,)
     a.toggleAttribute('target', a.host !== location.host);
-    console.log(a.classList)
+    a.target = a.host !== location.host ? "_blank" : "";
 }
 
 document.body.insertAdjacentHTML(
