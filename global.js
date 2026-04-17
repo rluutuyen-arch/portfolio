@@ -33,8 +33,9 @@ for(let p of pages) {
     a.textContent = title;
     nav.append(a);
     a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname,)
-    a.toggleAttribute('target', a.host !== location.host);
-    a.target = a.host !== location.host ? "_blank" : "";
+    if (a.host !== location.host) {
+        a.target = "_blank";
+    }
 }
 
 document.body.insertAdjacentHTML(
