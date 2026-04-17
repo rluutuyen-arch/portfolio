@@ -1,6 +1,12 @@
 html{
   color-scheme: light dark;
 }
+.color-scheme{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
 body {
     font-family: Georgia, serif;
 }
