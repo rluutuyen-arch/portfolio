@@ -12,9 +12,6 @@ function $$(selector, context = document) {
 let pages = [
     {url: '', title: 'Home'}, 
     {url: 'projects/', title: 'Projects'}
-    // {url: 'contact/', title: 'Contact'}, 
-    // {url: 'https://github.com/rluutuyen-arch/', title: 'Github'}, 
-    // {url: 'resume.html', title: 'Resume'}
 ]
 
 const BASE_PATH = (location.hostname ==="localhost" || location.hostname === "127.0.0.1") 
