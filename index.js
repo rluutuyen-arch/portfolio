@@ -15,13 +15,3 @@ if (profileStats) {
         </dl>
     `;
 }
-for (const [key, value] of Object.entries(githubData)) {
-    const dt = document.createElement('dt');
-    const dd = document.createElement('dd');
-
-    dt.textContent = key;
-    dd.textContent = value;
-
-    statsContainer.appendChild(dt);
-    statsContainer.appendChild(dd);
-}
