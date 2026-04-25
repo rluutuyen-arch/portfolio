@@ -4,5 +4,5 @@ const projectsContainer = document.querySelector('.projects');
 renderProjects(projects, projectsContainer, 'h2');
 const title = document.querySelector('.projects-title');
 const count = projects.length;
-console.log(Object.keys(title))
+console.log(title)
 title.textContent = "(${count}) Projects"
