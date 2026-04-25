@@ -2,19 +2,19 @@
     {
         "title": "Significance of First Dragons in LoL.",
         "year": "2026", 
-        "image": "./images/dragon.jpg",
+        "image": "images/dragon.jpg",
         "description": "Project about the significance of first dragon in the game League of Legends for game result and a predictive model on who kills first baron."
     },
     {
         "title": "Wordle Clone",
         "year": "2024", 
-        "image": "./images/wordle.png",
+        "image": "images/wordle.png",
         "description": "Clone of the popular game wordle."
     },
     {
         "title": "GMTK Game Jam 2025",
         "year": "2025", 
-        "image": "./images/game_jam.png",
+        "image": "images/game_jam.png",
         "description": "(Loop Theme) Helped make a game simulating the choices of a 9-5 worker, playing minigames that proceed to different narrative endings."
     },
     {
