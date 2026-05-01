@@ -23,7 +23,7 @@ let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
 arcs.forEach((arc, idx) => {
-    d3.select('svg').append('path').attr('d', arc).attr('fill', colors[idx]);
+    d3.select('svg').append('path').attr('d', arc).attr('fill', colors(idx));
 });
 
 let legend = d3.select('.legend');
