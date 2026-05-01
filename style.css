@@ -151,7 +151,7 @@ dd {
   gap: 8px 16px;
   flex: 1;
   gap: 2rem;
-  border-width: 2;
+  border-width: 2px solid #808080;
 }
 
 .legend li {
@@ -172,7 +172,7 @@ dd {
 
 .container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex: 1;
-  gap: 2rem;
+  gap: 25px;
 }
