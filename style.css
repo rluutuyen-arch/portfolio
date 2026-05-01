@@ -139,31 +139,29 @@ dd {
 #projects-pie-plot {
   max-width: 20em;
   margin-block: 2em;
-  flex: 0 1 300px;
   overflow: visible;
 }
 
 .legend {
-  padding: 0.5;
+  padding: 1rem;
   margin: 1rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 8px 16px;
-  border-width: 2px solid #808080;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(0em, 1fr));
 }
 
 .legend li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
 }
 
 .legend .swatch {
-  width: 12px;
+  width: 0.9rem;
   aspect-ratio: 1/1;
   background-color: var(--color);
-  border-radius: 3px;
   display: inline-block;
   border-radius: 50%;
 }
@@ -171,5 +169,5 @@ dd {
 .container {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 2rem;
 }
