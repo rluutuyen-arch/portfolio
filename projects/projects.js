@@ -19,7 +19,7 @@ let data = [
 ];
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 let sliceGenerator = d3.pie().value((d) => d.value);
-let arcGenerator = d3.arc();
+let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
 arcs.forEach((arc, idx) => {
