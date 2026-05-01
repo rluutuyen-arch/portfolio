@@ -114,3 +114,16 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: 2;
   margin: 0;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+dt {
+  grid-row: 1;
+}
+
+dd {
+  grid-row: 2;
+}
