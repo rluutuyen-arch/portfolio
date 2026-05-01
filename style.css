@@ -146,7 +146,9 @@ dd {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, max-content));
   margin: 1rem;
+  padding: 1rem;
   gap: 8px 16px;
+  list-style: none;
   border: 2px solid #808080;
   border-radius: 5px;
 }
