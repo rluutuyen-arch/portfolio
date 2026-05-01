@@ -86,34 +86,3 @@ searchInput.addEventListener('change', (event) => {
 })
 
 
-// newSVG.selectAll('path').remove();
-// newArcs.forEach((arc, i) => {
-//   newSVG
-//     .append('path')
-//     .attr('d', arc)
-//     .attr('fill', colors(i))
-//     .on('click', () => {
-//       selectedIndex = selectedIndex === i ? -1 : i;
-//       newSvg
-//         .selectAll('path')
-//         .attr('class', (_, idx) => (
-//           idx === selectedIndex ? 'selected' : ''
-//         ));
-//       newLegend
-//         .selectAll('li')
-//         .attr('class', (_, idx) => (
-//           idx === selectedIndex ? 'selected' : ''
-//         ));
-//     if (selectedIndex === -1) {
-//       renderProjects(projects, projectsContainer, 'h2');
-//     } else {
-//       let selectedYear = data[selectedIndex].label;
-//       let filtered = projects.filter(project => 
-//         project.year === selectedYear
-//       );
-//       renderProjects(filtered, projectsContainer, 'h2');
-//     }
-//     });
-// });
-
-
