@@ -139,7 +139,7 @@ dd {
 #projects-pie-plot {
   max-width: 20em;
   margin-block: 2em;
-
+  flex: 0 1 300px;
   overflow: visible;
 }
 
@@ -171,6 +171,5 @@ dd {
 .container {
   display: flex;
   align-items: center;
-  flex: 1;
   gap: 25px;
 }
