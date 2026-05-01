@@ -150,7 +150,8 @@ dd {
   flex-wrap: wrap;
   gap: 8px 16px;
   flex: 1;
-  gap: 1rem;
+  gap: 2rem;
+  border-width: 2;
 }
 
 .legend li {
@@ -166,7 +167,7 @@ dd {
   background-color: var(--color);
   border-radius: 3px;
   display: inline-block;
-  flex-shrink: 0;
+  border-radius: 50%;
 }
 
 .container {
