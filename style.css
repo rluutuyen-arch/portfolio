@@ -144,11 +144,12 @@ dd {
 }
 
 .legend {
-  list-style: none;
   padding: 0.5;
   margin: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  flex: 1;
   gap: 1rem;
 }
 
