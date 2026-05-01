@@ -173,3 +173,23 @@ dd {
   align-items: center;
   gap: 2rem;
 }
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(46.787% 0.2619 287.384) !important;
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+svg{
+  &:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+}
