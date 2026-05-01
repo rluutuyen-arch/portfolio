@@ -32,31 +32,38 @@ function renderPieChart(projectsGiven) {
         .append('path')
         .attr('d', arc)
         .attr('fill', colors(idx))
+        .attr('class', newData[idx].label === selectedYear ? 'selected' : null)
         .on('click', () => {
           selectedIndex = selectedIndex === idx ? -1 : idx;
+          selectedYear = newData[selectedIndex]?.label ?? null;
           newSVG
             .selectAll('path')
-            .attr('class', (_, idx) => (
-              idx === selectedIndex ? 'selected' : ''
-            ));
+            .attr('class', (_, i) =>
+              i === selectedIndex ? 'selected' : null
+            );
           newLegend
             .selectAll('li')
-            .attr('class', (_, idx) => (
-              idx === selectedIndex ? 'selected' : ''
-            ));
-          selectedYear = newData[selectedIndex]?.label ?? null;
-          renderProjects(filter(projects), projectsContainer, 'h2');
+            .attr('class', (_, i) =>
+              i === selectedIndex ? 'selected' : null
+            );
+          filtered = filter(projects);
+          if(selectedIndex === -1) {
+            renderProjects(filtered, projectsContainer, 'h2');
+          } else {
+            renderProjects(filtered, projectsContainer, 'h2');
+          }
+          renderPieChart(queryMatch(projects))
         });
-  });
-
   let newLegend = d3.select('.legend');
   newLegend.selectAll('li').remove();
   newData.forEach((d, idx) => {
     newLegend
       .append('li')
+      .attr('class', d.label === selectedYear ? 'selected' : null)
       .attr('style', `--color:${colors(idx)}`) 
       .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); 
   });
+});
 }
 
 function filter(projs) {
@@ -70,17 +77,24 @@ function filter(projs) {
   });
 }
 
+function queryMatch(projects) {
+  return projects.filter((project) =>{
+    return (Object.values(project).join('\n').toLowerCase()).includes(query.toLowerCase())
+  })  
+}
+
 let selectedIndex = -1;
 let query = '';
 let searchInput = document.querySelector('.searchBar');
 let selectedYear;
+let filtered;
 
 renderPieChart(projects);
 
 
-searchInput.addEventListener('change', (event) => {
+searchInput.addEventListener('input', (event) => {
   query = event.target.value;
-  let filtered = filter(projects);
+  filtered = filter(projects);
   renderProjects(filtered, projectsContainer, 'h2')
   renderPieChart(filtered);
 })
