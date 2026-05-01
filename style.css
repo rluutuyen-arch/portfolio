@@ -170,7 +170,7 @@ dd {
 }
 
 .container {
-  display: grid;
+  display: felx;
   align-items: flex-end;
   flex: 1;
   gap: 2rem;
