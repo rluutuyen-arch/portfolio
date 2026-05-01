@@ -144,8 +144,7 @@ dd {
 
 .legend {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10em, max-content));
   margin: 1rem;
   gap: 8px 16px;
   border: 2px solid #808080;
