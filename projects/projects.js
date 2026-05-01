@@ -96,7 +96,7 @@ searchInput.addEventListener('input', (event) => {
   query = event.target.value;
   filtered = filter(projects);
   renderProjects(filtered, projectsContainer, 'h2')
-  renderPieChart(filtered);
+  renderPieChart(queryMatch(projects));
 })
 
 
