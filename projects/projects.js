@@ -52,7 +52,7 @@ function renderPieChart(projectsGiven) {
           } else {
             renderProjects(filtered, projectsContainer, 'h2');
           }
-          renderPieChart(queryMatch(projects))
+          //renderPieChart(queryMatch(projects))
         });
   let newLegend = d3.select('.legend');
   newLegend.selectAll('li').remove();
