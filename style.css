@@ -145,8 +145,8 @@ dd {
 
 .legend {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0.5;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -169,7 +169,7 @@ dd {
 }
 
 .container {
-  display: flex;
+  display: grid;
   align-items: flex-end;
   flex: 1;
   gap: 2rem;
