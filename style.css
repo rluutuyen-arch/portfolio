@@ -127,3 +127,17 @@ dt {
 dd {
   grid-row: 2;
 }
+
+.project-year {
+  font-family: Baskerville, "Times New Roman", serif;
+  font-variant-numeric: oldstyle-nums;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
