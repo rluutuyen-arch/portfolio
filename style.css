@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 dl {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border-width: 0.25rem;
 }
 
 dt {
@@ -165,4 +166,10 @@ dd {
   border-radius: 3px;
   display: inline-block;
   flex-shrink: 0;
+}
+
+.container {
+  align-items: flex-end;
+  flex: 1;
+  gap: 2rem;
 }
