@@ -18,10 +18,11 @@
         "description": "(Loop Theme) Helped make a game simulating the choices of a 9-5 worker, playing minigames that proceed to different narrative endings."
     },
     {
-        "title": "Modi qui in nobis.",
-        "year": "2018", 
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Aspernatur placeat quae molestias qui enim, maxime reprehenderit libero corporis distinctio sed? Numquam officia minus maiores iure! Eaque dolore aspernatur eveniet beatae tempora asperiores culpa fugit quia numquam ut. Doloremque!"
+        "title": "Boston Bike Map",
+        "year": "2026", 
+        "image": "/portfolio/images/bbm.png",
+        "url": "https://rluutuyen-arch.github.io/bostonbikemap/",
+        "description": "Interactive map centered around Boston showing bike lanes and traffic at bike stations."
     },
     {
         "title": "Vero repellendus sit in?",
